@@ -1,2 +1,2 @@
 # Carmen's UX Portfolio website 
-<a>www.carmenminikus.com</a>
+<a>https://www.carmenminikus.com</a>
