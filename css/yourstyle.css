@@ -1,0 +1,127 @@
+@charset "utf-8";
+/*--
+	Add your style here
+--*/
+
+/*Carmen's custon code*/
+
+.yellow-text {
+	color: #ffc815;
+}
+
+.bold {
+	font-weight: 800;
+}
+
+/*Hide on Desktop size:*/
+
+/* Hide hamurger menu*/
+@media screen and (min-width:1025px) {
+  .hamburger-menu   { display: none }
+}
+
+/*Hide standard titles*/
+@media screen and (min-width:1025px) {
+  .hide-on-desktop   { display: none }
+	.hide-on-lg-desktop {display: none}
+}
+
+@media screen and (max-width:1390px) {
+	.sl-tabs li {
+		width: 25%;
+		float:left;
+	 }
+}
+
+/*Hide on mobile sizes*/
+@media screen and (max-width:1024px) {
+  .hide-on-mobile   { display: none }
+	.sl-tabs li {
+		width: 50%;
+		float:left;
+	 }
+
+	 #research-tab, #testing-tab {
+		 border-right:1px solid #eee;
+	 }
+}
+
+
+
+
+
+/*Change process buttons starting from ipad size*/
+#sec-portfolio, #contact-page, .back-to-top {
+	background-color: white;
+}
+
+#sec-portfolio {
+	padding-top: 80px;
+}
+
+/* Slider Arrows On desktop*/
+
+.customNavigation.gals a.prev-slide  {
+   left:-40px;
+}
+
+.customNavigation.gals a.next-slide {
+   right:-40px;
+}
+
+.customNavigation.gals a.next-slide, .customNavigation.gals a.prev-slide {
+  background: none;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.owl-dots .owl-dot span {
+  border: rgba(255, 190, 0, 0.4);
+  background: rgba(255, 190, 0, 0.4);
+}
+
+.owl-dots .owl-dot.active span {
+  border: #ffc815;
+  background: #ffc815;
+}
+
+
+
+/*Slider Arrows on iPad*/
+@media screen and (max-width:1050px) {
+  .customNavigation.gals a.prev-slide {
+    left: 10px;
+    background-color: rgba(255, 200, 21, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .customNavigation.gals a.next-slide {
+     right:10px;
+     background-color: rgba(255, 200, 21, 0.2);
+     color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media screen and (max-width:480px) {
+  .customNavigation.gals a.prev-slide, .customNavigation.gals a.next-slide {
+    /*background: none;
+    color: #ffbb00;
+    position: absolute;
+    top: -28px;
+    font-size: 30px;*/
+    display: none;
+  }
+}
+
+.portfolio-content a {
+  color:##FFD600;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*Hide resume logo on ipad and smaller*/
+@media screen and (max-width:1400) {
+	.resum-header{
+		display: :none;
+	}
+
+}
